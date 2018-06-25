@@ -11,27 +11,27 @@ body {
     font-family: Courier;
     margin: 0;
 }
-
 .container {
-    margin: 0;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
     background-color: ghostwhite;
-
 }
 h1 {
     text-align: center;
     font-family: Courier;
     font-size: 4em;
-    margin-top: 0.1em;
-    
+    margin-top: 0em;
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;   
 }
 h2 {
     font-size: 2em;
     padding-left: 3em;
     font-family: Courier;
     color: lightsteelblue;
+    padding-top: 1em;
+    white-space: nowrap;
 }
 h4 {
     font-size: 1.2em;
@@ -52,22 +52,53 @@ section {
     border-radius: 2em;
     border-width: .25em;
     line-height: 1.5em;
-    overflow: auto;
+    overflow: auto; 
 }
-
 .footer {
     height: auto;
     background-color: lightsteelblue;
-    color:ghostwhite;
+    color: ghostwhite;
     font-size: 1.5em;
     padding: .1em;
     padding-right: 2em;
     font-family: Courier;
 }
-aside {
-    width: 45%;
-}
 main {
-    padding-left: 2em;
-    padding-top: 2em;
+    padding: 2em;
+}
+.clearfix {
+    overflow: auto;
+}
+.ed {
+    text-align: right;
+    padding: 1em;
+    white-space: nowrap;
+}
+aside {
+    font-family: Bookman Old Style;
+    float: right;
+    border-style: solid;
+    width: fit-content;
+    padding-right: 2em;
+    border-radius: 3em;
+}
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, background-color, color;
+    box-shadow: inset 0 0 0 4px ghostwhite, 0 0 1px rgba(0, 0, 0, 0);
+    border-radius: 3em;
+    color: lightsteelblue;
+}
+.button:hover, .button:focus, .button:active {
+    box-shadow: inset 0 0 0 4px cornflowerblue, 0 0 5px rgba(0, 0, 0, 0);
+    background-color: ;
+    color: cornflowerblue;
+}
+a {
+    float: right;
 }
