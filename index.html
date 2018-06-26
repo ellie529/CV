@@ -5,11 +5,40 @@
     <title>Ellie Marett CV</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
+    <script>
+    function openNav() {
+        document.getElementById("sideNavigation").style.width = "12.5em";
+        document.getElementById("main").style.marginLeft = "12.5em";
+    }
+    function closeNav() {
+        document.getElementById("sideNavigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
 <body>
-<div class="header">
-    <p style=text-align:left;>egmarett@uncg.edu
-    <span style="float:right;">(336) 414-2308</span>
-    </p>
+<div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+        <a href="#">About Me</a>
+        <a href="#">Features</a>
+        <a href="#">Contact Me</a>
+        <a href="image_ref.html">Image Ref</a>
+    </ul>
+</div>
+    <nav class="topnav">
+        <img style=float:right;height:5em;padding-right:5em;padding-top:.5em; src="uncg_logo.png">
+        <img style=float:right;height:5em;padding-right:5em;padding-top:.5em; src="latex_logo.png">
+        <img style=float:right;height:5em;padding-right:5em;padding-top:.5em; src="python_logo.png">
+        <img style=float:right;height:5em;padding-right:5em;padding-top:.5em; src="html_css_js.png">
+        <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="ghostwhite" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="ghostwhite" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="ghostwhite" stroke-width="5"/>
+        </svg>
+      </a>
+    </nav>
+<div id="main">
 </div>
 <div class="container">
     <h1>Ellie Marett</h1>
@@ -17,11 +46,10 @@
         <section>
         <p>Bachelors in Mathematics with HTML, CSS, and JS skills looking to enter the world of front-end web development.</p>
         </section>
-    <h2 style=float:left;>Education</h2>
-    <div class="ed"><img src="uncg_logo.png" style=height:5.5em;></div>
+    <h2>Education</h2>
         <section>
-        <main><em>University of North Carolina at Greensboro</em><br>B.A. in Mathematics
-        </main>
+        <p><em>University of North Carolina at Greensboro</em><br>B.A. in Mathematics, 2018
+        </p>
         </section>
     <h2>Experience</h2>
         <section>
@@ -41,8 +69,7 @@
             <p>At UNCG, I worked for Professor Walker Weigel, helping her grade homework, tests, and quizzes for her lower level math classes (i.e.&nbsp;Precalculus and Business Calculus).</p>
             <p>I also helped tutor in the Math Emporium Lab. Students at the MEL were enrolled in combination web/lecture classes for Precalculus, College Algebra, and Business Calculus.</p>
         </section>
-    <h2 style=float:left;>Skills</h2>    
-        <div class="ed"><img src="html_css_js.png" style=height:5.5em;></div>
+    <h2>Skills</h2>    
         <section style="margin-bottom:1.5em;">
         <ul>
         <li>HTML5</li>
@@ -52,6 +79,8 @@
         <li>Python</li>
         <li>LaTeX</li>
         <li>R</li>
+        <li>GIMP 2</li>
+        <li>Microsoft Office</li>
         </ul>
         </section>
     <a class="button" href="image_ref.html"><aside>
