@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: ghostwhite;
 }
 .header{
     height: auto;
@@ -166,14 +167,10 @@ body {
     text-decoration: none;
     font-size: 1em;
 }
-
-svg:hover {
-    stroke: gray;
-}
  
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: lightsteelblue;
+    background-color: gray;
     color: ghostwhite;
 }
  
@@ -232,4 +229,9 @@ a svg{
       background: #555;
     }
   }
+}
+.contactInfo {
+    column-count: 2;
+    text-align: center;
+    padding: 3em;
 }
