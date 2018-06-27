@@ -208,17 +208,39 @@ a svg{
     }
   }
 }
-.contactInfo {
-    text-align: center;
-    padding: 2em 10%;
-}
 .phone {
     float: right;
-    padding-right: 3em;
 }
 .email {
     float: left;
 }
+.feedback {
+    float: right;
+}
 .questions {
-    border-radius: 1.5em;
+    float: left;
+}
+.sectionOne {
+    background-color: white;
+    font-family: Bookman Old Style;
+    border-color: lightslategray;
+    border-style: double;
+    padding: 2em 15%;
+    border-radius: 2em;
+    border-width: .25em;
+    line-height: 1.5em;
+    overflow: auto;
+    text-align: center;
+}
+.sectionTwo {
+    background-color: white;
+    font-family: Bookman Old Style;
+    border-color: lightslategray;
+    border-style: double;
+    padding: 2em 10%;
+    border-radius: 2em;
+    border-width: .25em;
+    line-height: 1.5em;
+    overflow: auto;
+    text-align: center;
 }
