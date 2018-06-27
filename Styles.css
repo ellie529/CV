@@ -166,7 +166,7 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-    section {font-size: 18px;font-family: serif;}
+    section {font-size: 18px;}
 } 
 a svg{
   transition:all .5s ease;
