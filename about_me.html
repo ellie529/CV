@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta title="Image Source">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+    <script>
+    function openNav() {
+        document.getElementById("sideNavigation").style.width = "12.5em";
+        document.getElementById("main").style.marginLeft = "12.5em";
+    }
+    function closeNav() {
+        document.getElementById("sideNavigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+<div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+        <a href="about_me.html">About Me</a>
+        <a href="index.html">CV</a>
+        <a href="contact_me.html">Contact Me</a>
+    </ul>
+</div>
+    <nav class="topnav">
+        <img style=float:right;height:5em;padding-right:5em;padding-top:.5em; src="uncg_logo.png">
+        <a href="#" onclick="openNav()">
+        <svg class="white" width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="ghostwhite" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="ghostwhite" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="ghostwhite" stroke-width="5"/>
+        </svg>
+        </a>
+    </nav>
+<body>
+    <div class="container">
+    <h1>About Me</h1>
+        <h2>Hobbies</h2>
+            <section>
+            <ul>
+                <li>rock climbing</li>
+                <li>video games</li>
+                <li>cooking</li>
+                <li>diy woodworking</li>
+            </ul>
+            </section>
+        <h2>Passions</h2>
+            <section>
+            <ul>
+                <li>mathematics!</li>
+                <li>physics, astronomy, chemistry</li>
+                <li>learning</li>
+                <li>web design</li>
+            </ul>
+            </section>
+    <br><a class="button" href="index.html">
+    <aside>
+        <p>Back to CV</p>
+    </aside>
+    </a>
+    </div>
+    <div class="footer">
+    <p style=text-align:left;>egmarett@uncg.edu
+        <span style="float:right;">(336) 414-2308</span></p>
+    </div>
+</body>    
+</html>

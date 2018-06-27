@@ -119,7 +119,8 @@ a {
     font-size: 1.5em;
     color: grey;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    white-space: nowrap;
 }
 div.sidenav ul {
     padding-right: 1em;
@@ -232,13 +233,15 @@ a svg{
 }
 .contactInfo {
     text-align: center;
-    padding: 2em 5em;
-    font-size: 1.75em;
+    padding: 2em 9em;
 }
 .phone {
     float: right;
-    padding-right: 2em;
+    padding-right: 3em;
 }
 .email {
     float: left;
+}
+.questions {
+    border-radius: 1.5em;
 }
