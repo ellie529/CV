@@ -231,7 +231,14 @@ a svg{
   }
 }
 .contactInfo {
-    column-count: 2;
     text-align: center;
-    padding: 3em;
+    padding: 2em 5em;
+    font-size: 1.75em;
+}
+.phone {
+    float: right;
+    padding-right: 2em;
+}
+.email {
+    float: left;
 }
