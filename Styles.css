@@ -95,24 +95,19 @@ aside {
 a {
     float: right;
 }
-
-
-
-
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: lightsteelblue; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: lightsteelblue;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
- 
-/* The navigation menu links */
 .sidenav a {
     padding: 0.25em 0.25em 0.25em 0.5em;
     text-decoration: none;
@@ -126,13 +121,9 @@ div.sidenav ul {
     padding-right: 1em;
     line-height: 5em;
 }
- 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
     color: ghostwhite;
 }
- 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -140,8 +131,6 @@ div.sidenav ul {
     font-size: 2em;
     margin-left: 4em;
 }
- 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 0em;
@@ -151,14 +140,10 @@ div.sidenav ul {
 body {
   overflow-x: hidden;
 }
- 
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: lightsteelblue;
     overflow: hidden;
 }
- 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -168,33 +153,20 @@ body {
     text-decoration: none;
     font-size: 1em;
 }
- 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: gray;
     color: ghostwhite;
 }
- 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
- 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
- 
+} 
 a svg{
   transition:all .5s ease;
- 
   &:hover{
     #transform:rotate(180deg);
-  }
+    }
 }
- 
 #ico{
   display: none;
 }
@@ -205,10 +177,9 @@ a svg{
   padding: 5px;
   width: 320px;
   @include border-radius(5px);
- 
   #transition: all 0.5s ease;
- 
-  a{
+
+    a {
     display: block;
     color: #fff;
     text-align: center;
@@ -216,7 +187,7 @@ a svg{
     margin: 3px 0;
     text-decoration: none;
     background: #444;
- 
+      
     &:nth-child(1){
       margin-top: 0;
       @include border-radius(3px 3px 0 0 );
@@ -225,7 +196,6 @@ a svg{
       margin-bottom: 0;
       @include border-radius(0 0 3px 3px);
     }
- 
     &:hover{
       background: #555;
     }
