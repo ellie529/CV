@@ -74,6 +74,7 @@ aside {
     width: fit-content;
     padding-right: 2em;
     border-radius: 3em;
+    font-size: 1.25em;
 }
 .button {
     display: inline-block;
@@ -121,6 +122,13 @@ div.sidenav ul {
     padding-right: 1em;
     line-height: 5em;
 }
+div.sidenav ul a{
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+}
 .sidenav a:hover, .offcanvas a:focus{
     color: ghostwhite;
 }
@@ -158,6 +166,7 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    section {font-size: 18px;font-family: serif;}
 } 
 a svg{
   transition:all .5s ease;
